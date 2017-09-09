@@ -1,0 +1,4 @@
+kfs_test folder contains the test application. Use make install to build and scp to the QEMU guest. Then on the guest, you have to execute spawn:
+./spawn
+This will create a hierarchy of processes. All the processes listen to the signal handler, so you can signal any of them.
+The signal handler will just receive any signal and exit after printing the signal and also returns the signal.
